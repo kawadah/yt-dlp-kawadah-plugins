@@ -12,6 +12,10 @@ See [yt-dlp's wiki on plugin development](https://github.com/yt-dlp/yt-dlp/wiki/
    mise install
    ```
 
+## mise tasks
+
+Tasks in `mise.toml` are ordered alphabetically.
+
 ## Git workflow
 
 - Feature branches: `features/<name>`
