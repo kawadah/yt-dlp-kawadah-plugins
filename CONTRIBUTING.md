@@ -1,5 +1,7 @@
 # CONTRIBUTING
 
+See [yt-dlp's wiki on plugin development](https://github.com/yt-dlp/yt-dlp/wiki/Plugin-Development).
+
 ## Getting started
 
 1. Install [mise](https://mise.jdx.dev)
