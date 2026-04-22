@@ -16,11 +16,13 @@ See [yt-dlp's wiki on plugin development](https://github.com/yt-dlp/yt-dlp/wiki/
 
 - Feature branches: `features/<name>`
 
-## Commit messages
+## Commit size
 
 Each commit should represent one logical change. Do not bundle unrelated changes into a single commit.
 
-Follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+## Commit messages
+
+Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 Common types: `feat`, `fix`, `docs`, `refactor`, `chore`, `ci`, `test`
 
