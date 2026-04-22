@@ -2,7 +2,8 @@
 yt-dlp plugins for personal use.
 
 ## Usage
-TBD
+
+See [yt-dlp's docs on installing plugins](https://github.com/yt-dlp/yt-dlp#installing-plugins).
 
 ## Supported websites
 TBD
