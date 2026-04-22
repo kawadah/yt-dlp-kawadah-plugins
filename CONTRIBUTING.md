@@ -29,7 +29,9 @@ Each commit should represent one logical change. Do not bundle unrelated changes
 
 Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-Common types: `feat`, `fix`, `docs`, `refactor`, `chore`, `ci`, `test`
+Common types: `feat`, `fix`, `docs`, `refactor`, `chore`, `ci`, `test`, `style`
+
+The description after the colon should be capitalized, unless it begins with a proper noun that has its own casing (e.g. `yt-dlp`, `iPhone`).
 
 ### Without scope
 
@@ -56,7 +58,7 @@ Must be marked with `!` before the colon in the commit title.
 ### Examples
 
 ```
-feat: add HiBiKi extractor
-fix(hibiki): handle missing episode metadata
-feat(hibiki)!: drop support for legacy stream URLs
+feat: Add HiBiKi extractor
+fix(hibiki): Handle missing episode metadata
+feat(hibiki)!: Drop support for legacy stream URLs
 ```
