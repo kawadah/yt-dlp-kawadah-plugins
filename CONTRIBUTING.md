@@ -1,8 +1,14 @@
-# CONTRIBUTING.md
+# CONTRIBUTING
 
-## Prerequisites
+## Getting started
 
-- [mise](https://mise.jdx.dev)
+1. Install [mise](https://mise.jdx.dev)
+2. In the repository root, run:
+
+   ```
+   mise trust
+   mise install
+   ```
 
 ## Git workflow
 
