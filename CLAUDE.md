@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+Read @README.md and @CONTRIBUTING.md first. CLAUDE.md defines instructions specifically to Claude Code.
+
 ## Project structure
 
 ```
@@ -14,8 +16,3 @@ Follows the [yt-dlp-sample-plugins](https://github.com/yt-dlp/yt-dlp-sample-plug
 
 - **NEVER write outside the project directory** — no `/tmp`, `~`, or any external path
 - Temporary files go in `.tmp/` inside the repo (ignored by `.gitignore`); clean up after use
-
-## Git workflow
-
-- Feature branches: `features/<name>`
-- Worktrees live inside the repo at `.claude/worktrees/<name>` — use `claude -w <name>` to create them (ignored by `.gitignore`)
