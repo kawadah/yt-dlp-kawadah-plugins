@@ -6,6 +6,8 @@
 
 ## Commit messages
 
+Each commit should represent one logical change. Do not bundle unrelated changes into a single commit.
+
 Follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ```
