@@ -12,6 +12,10 @@ yt_dlp_plugins/
 
 Follows the [yt-dlp-sample-plugins](https://github.com/yt-dlp/yt-dlp-sample-plugins) layout. Uses `find_namespace:` so **no `__init__.py`** in any `yt_dlp_plugins` directory.
 
+## Worktrees
+
+Use `claude -w <name>` to create a worktree. Claude Code's default worktree directory is `.claude/worktrees/` (ignored by `.gitignore`).
+
 ## File system rules
 
 - **NEVER write outside the project directory** — no `/tmp`, `~`, or any external path

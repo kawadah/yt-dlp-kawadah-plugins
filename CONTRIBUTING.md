@@ -3,7 +3,6 @@
 ## Git workflow
 
 - Feature branches: `features/<name>`
-- Worktrees live inside the repo at `.claude/worktrees/<name>` — use `claude -w <name>` to create them (ignored by `.gitignore`)
 
 ## Commit messages
 
