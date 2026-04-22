@@ -1,6 +1,4 @@
-# yt-dlp-kawadah-plugins
-
-Personal yt-dlp extractor plugins.
+# CLAUDE.md
 
 ## Project structure
 
