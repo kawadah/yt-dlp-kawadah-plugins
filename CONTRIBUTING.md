@@ -1,5 +1,9 @@
 # CONTRIBUTING.md
 
+## Prerequisites
+
+- [mise](https://mise.jdx.dev)
+
 ## Git workflow
 
 - Feature branches: `features/<name>`
