@@ -10,10 +10,34 @@ Each commit should represent one logical change. Do not bundle unrelated changes
 
 Follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-```
-<type>[optional scope]: <description>
-```
-
 Common types: `feat`, `fix`, `docs`, `refactor`, `chore`, `ci`, `test`
 
-Breaking changes: append `!` before the colon (e.g. `feat!: ...`) or add a `BREAKING CHANGE:` footer.
+### Without scope
+
+```
+<type>: <description>
+```
+
+### With scope
+
+Scope must be wrapped in parentheses.
+
+```
+<type>(<scope>): <description>
+```
+
+### Breaking changes
+
+Must be marked with `!` before the colon in the commit title.
+
+```
+<type>[(<scope>)]!: <description>
+```
+
+### Examples
+
+```
+feat: add HiBiKi extractor
+fix(hibiki): handle missing episode metadata
+feat(hibiki)!: drop support for legacy stream URLs
+```
