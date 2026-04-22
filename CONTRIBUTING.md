@@ -15,7 +15,7 @@ See [yt-dlp's wiki on plugin development](https://github.com/yt-dlp/yt-dlp/wiki/
 ## Git workflow
 
 - Feature branches: `features/<name>`
-- Merge feature branches into main using a merge commit (`git merge --no-ff`), unless otherwise agreed
+- Merge feature branches into main using a merge commit (`git merge --no-ff`), unless otherwise agreed. Use git's default merge commit message.
 
 ## Commit size
 
