@@ -16,6 +16,8 @@ Follows the [yt-dlp-sample-plugins](https://github.com/yt-dlp/yt-dlp-sample-plug
 
 Use `claude -w <name>` to create a worktree. Claude Code's default worktree directory is `.claude/worktrees/` (ignored by `.gitignore`).
 
+When working inside a worktree, run `mise trust` first before running any mise commands.
+
 ## Commits
 
 When 2 or more files with unrelated changes are pending, suggest making separate commits.
