@@ -12,9 +12,17 @@ See [yt-dlp's wiki on plugin development](https://github.com/yt-dlp/yt-dlp/wiki/
    mise install
    ```
 
-## mise tasks
+## mise
 
-Tasks in `mise.toml` are ordered alphabetically.
+### Settings
+
+Project-level mise settings are configured in `mise.toml` under `[settings]`. Do not modify global config.
+
+To add a setting, run `mise settings add <key> <value>`.
+
+### Tasks
+
+Tasks in `mise.toml` should be ordered alphabetically.
 
 ## Git workflow
 
