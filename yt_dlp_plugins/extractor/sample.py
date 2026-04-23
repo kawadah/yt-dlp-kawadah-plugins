@@ -11,7 +11,7 @@ from yt_dlp.extractor.common import InfoExtractor
 # ⚠ The class name must end in "IE"
 class SamplePluginIE(InfoExtractor):
     _WORKING = False
-    _VALID_URL = r'^sampleplugin:'
+    _VALID_URL = r"^sampleplugin:"
 
     def _real_extract(self, url):
-        self.to_screen('URL "%s" successfully captured' % url)
+        self.to_screen(f'URL "{url}" successfully captured')

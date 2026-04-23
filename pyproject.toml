@@ -2,5 +2,19 @@
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
-[tool.distutils.bdist_wheel]
-universal = true
+[project]
+name = "yt-dlp-kawadah-plugins"
+version = "2026.04.22"
+requires-python = ">=3.10"
+
+[dependency-groups]
+dev = ["ruff"]
+
+[tool.setuptools.packages.find]
+namespaces = true
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
