@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mise lock*)",
+      "Bash(mise run *)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git status*)"
+    ]
+  }
+}
