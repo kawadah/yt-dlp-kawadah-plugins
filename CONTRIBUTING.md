@@ -60,7 +60,8 @@ Scope must be wrapped in parentheses.
 Must be marked with `!` before the colon in the commit title.
 
 ```
-<type>[(<scope>)]!: <description>
+<type>!: <description>
+<type>(<scope>)!: <description>
 ```
 
 ### Examples
