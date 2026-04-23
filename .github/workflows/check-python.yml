@@ -7,7 +7,8 @@ on:
       - "**/pyproject.toml"
       - ".github/workflows/check-python.yml"
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   check:
