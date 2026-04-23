@@ -77,3 +77,42 @@ provenance = "github-attestations"
 checksum = "sha256:fe0c7815acf4fc45f8a5eff58ed3cf7ae2e15c3cf1dceadbd10c816ec1690cc1"
 url = "https://github.com/astral-sh/uv/releases/download/0.11.7/uv-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
+
+[[tools.yt-dlp]]
+version = "2026.03.17"
+backend = "github:yt-dlp/yt-dlp"
+
+[tools.yt-dlp."platforms.linux-arm64"]
+checksum = "sha256:92229229f6e1fbefd33a0ba55bf3dd50554f3fe04cfaa8d133dfdbe5b144c1dc"
+url = "https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp_linux_aarch64.zip"
+url_api = "https://api.github.com/repos/yt-dlp/yt-dlp/releases/assets/376073945"
+
+[tools.yt-dlp."platforms.linux-arm64-musl"]
+checksum = "sha256:92229229f6e1fbefd33a0ba55bf3dd50554f3fe04cfaa8d133dfdbe5b144c1dc"
+url = "https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp_linux_aarch64.zip"
+url_api = "https://api.github.com/repos/yt-dlp/yt-dlp/releases/assets/376073945"
+
+[tools.yt-dlp."platforms.linux-x64"]
+checksum = "sha256:addc00e4509ad82e9c06f7ef35a8ca0ccd09b33a295212a475d0cf16c16e1466"
+url = "https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp_linux.zip"
+url_api = "https://api.github.com/repos/yt-dlp/yt-dlp/releases/assets/376073941"
+
+[tools.yt-dlp."platforms.linux-x64-musl"]
+checksum = "sha256:addc00e4509ad82e9c06f7ef35a8ca0ccd09b33a295212a475d0cf16c16e1466"
+url = "https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp_linux.zip"
+url_api = "https://api.github.com/repos/yt-dlp/yt-dlp/releases/assets/376073941"
+
+[tools.yt-dlp."platforms.macos-arm64"]
+checksum = "sha256:6335a1d6c2d2d5d018d9ed348631a1cf1c63e3c1621c284a97b6196dd75645f5"
+url = "https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp_macos.zip"
+url_api = "https://api.github.com/repos/yt-dlp/yt-dlp/releases/assets/376073948"
+
+[tools.yt-dlp."platforms.macos-x64"]
+checksum = "sha256:6335a1d6c2d2d5d018d9ed348631a1cf1c63e3c1621c284a97b6196dd75645f5"
+url = "https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp_macos.zip"
+url_api = "https://api.github.com/repos/yt-dlp/yt-dlp/releases/assets/376073948"
+
+[tools.yt-dlp."platforms.windows-x64"]
+checksum = "sha256:cd54a6e94516bd7d56cc6842cef21278b7624d5e7f25d96aa8461ffb5d345067"
+url = "https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp_win.zip"
+url_api = "https://api.github.com/repos/yt-dlp/yt-dlp/releases/assets/376074032"

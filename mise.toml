@@ -5,6 +5,7 @@ pin = true
 [tools]
 python = "3.14.4"
 uv = "0.11.7"
+yt-dlp = { version = "2026.03.17", rename_exe = "yt-dlp" }
 
 [tasks.format]
 description = "Check formatting"
