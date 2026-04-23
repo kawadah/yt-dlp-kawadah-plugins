@@ -14,7 +14,7 @@ dev = ["ruff"]
 namespaces = true
 
 [tool.ruff]
-line-length = 120
+include = ["**/*.py", "**/pyproject.toml"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP"]
