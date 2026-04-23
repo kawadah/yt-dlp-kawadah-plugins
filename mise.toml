@@ -1,4 +1,5 @@
 [settings]
+install_before = "3d"
 lockfile = true
 pin = true
 
@@ -12,16 +13,24 @@ run = "uv run yt-dlp"
 
 [tasks.format]
 description = "Check formatting"
+depends = ["format:python"]
+
+[tasks."format:python"]
+description = "Check Python formatting"
 run = "uv run ruff format --check ."
 
-[tasks."format:fix"]
-description = "Format"
+[tasks."format:python:fix"]
+description = "Format Python code"
 run = "uv run ruff format ."
 
 [tasks.lint]
 description = "Lint"
+depends = ["lint:python"]
+
+[tasks."lint:python"]
+description = "Lint Python code"
 run = "uv run ruff check ."
 
-[tasks."lint:fix"]
-description = "Auto-fix lint errors"
+[tasks."lint:python:fix"]
+description = "Fix Python lint errors"
 run = "uv run ruff check --fix ."
