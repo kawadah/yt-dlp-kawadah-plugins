@@ -26,7 +26,7 @@ run = "uv run ruff format ."
 
 [tasks.lint]
 description = "Lint"
-depends = ["lint:python"]
+depends = ["lint:python", "lint:workflows"]
 
 [tasks."lint:python"]
 description = "Lint Python code"
