@@ -8,6 +8,7 @@ actionlint = "1.7.12"
 python = "3.14.4"
 shellcheck = "0.11.0"
 uv = "0.11.7"
+zizmor = "1.24.1"
 
 [tasks.dev]
 env = { PYTHONPATH = "{{config_root}}" }
@@ -39,4 +40,4 @@ run = "uv run ruff check --fix ."
 
 [tasks."lint:workflows"]
 description = "Lint GitHub Actions workflows"
-run = "actionlint"
+run = ["actionlint", "zizmor .github/"]
