@@ -20,6 +20,10 @@ Project-level mise settings are configured in `mise.toml` under `[settings]`. Do
 
 To add a setting, run `mise settings add <key> <value>`.
 
+### Adding tools
+
+When adding a tool, use `mise use <tool>` to add it, then run `mise lock` to update `mise.lock`.
+
 ### Tasks
 
 Tasks in `mise.toml` should be ordered alphabetically.
