@@ -27,3 +27,5 @@ jobs:
         run: actionlint
       - name: Run zizmor
         run: zizmor --format github .github/workflows/
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
