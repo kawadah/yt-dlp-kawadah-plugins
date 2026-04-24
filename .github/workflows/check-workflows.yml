@@ -21,8 +21,6 @@ jobs:
         uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151 # v4.0.1
         with:
           install_args: actionlint shellcheck zizmor
-      - name: Lint
-        run: mise run lint:workflows
       - name: Run actionlint
         run: actionlint
       - name: Run zizmor
