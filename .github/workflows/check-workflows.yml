@@ -25,3 +25,5 @@ jobs:
         run: mise run lint:workflows
       - name: Run actionlint
         run: actionlint
+      - name: Run zizmor
+        run: zizmor --format github .github/workflows/
