@@ -5,7 +5,7 @@ on:
     paths:
       - "**/*.py"
       - "**/pyproject.toml"
-      - ".github/workflows/check-python.yml"
+      - .github/workflows/check-python.yml
 
 permissions: {}
 

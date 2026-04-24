@@ -3,7 +3,7 @@ name: Check workflows
 on:
   pull_request:
     paths:
-      - ".github/workflows/**"
+      - .github/workflows/*.yml
 
 permissions: {}
 
