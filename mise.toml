@@ -40,4 +40,4 @@ run = "uv run ruff check --fix ."
 
 [tasks."lint:workflows"]
 description = "Lint GitHub Actions workflows"
-run = ["actionlint", "zizmor --format github .github/workflows/"]
+run = ["actionlint", "zizmor .github/workflows/"]
