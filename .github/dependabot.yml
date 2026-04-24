@@ -2,11 +2,11 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directory: /
-    schedule:
-      interval: daily
     cooldown:
       default-days: 3
     groups:
       all-non-major:
         patterns: ["*"]
         update-types: [minor, patch]
+    schedule:
+      interval: daily
