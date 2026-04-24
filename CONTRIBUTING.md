@@ -28,6 +28,14 @@ When adding a tool, use `mise use <tool>` to add it, then run `mise lock` to upd
 
 Tasks in `mise.toml` should be ordered alphabetically.
 
+## Claude Code
+
+### Settings
+
+When editing Claude Code settings, default to the project-level settings file (`.claude/settings.json`). Only edit user-level settings (`~/.claude/settings.json`) if explicitly asked.
+
+When working in a worktree, edit the project-level settings inside the worktree, not in the main repository.
+
 ## Git workflow
 
 - Feature branches: `features/<name>`
