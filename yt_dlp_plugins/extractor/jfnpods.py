@@ -46,7 +46,10 @@ class JFNPodsIE(InfoExtractor):
         return {
             "id": episode.get("uid") or voice_id,
             "title": episode.get("title"),
-            "url": url_or_none(episode.get("audioUrl")) or url_or_none(episode.get("episodeUrlHRef")),
+            "url": (
+                url_or_none(episode.get("audioUrl"))
+                or url_or_none(episode.get("episodeUrlHRef"))
+            ),
             "description": clean_html(episode.get("summary")),
             "thumbnail": url_or_none(episode.get("imageUrl")),
             "duration": float_or_none(episode.get("duration")),
