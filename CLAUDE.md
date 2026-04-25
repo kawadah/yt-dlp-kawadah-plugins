@@ -18,6 +18,12 @@ Use `claude -w <name>` to create a worktree. Claude Code's default worktree dire
 
 When working inside a worktree, run `mise trust` first before running any mise commands.
 
+## mise
+
+Always run project tasks via `mise run <task>`. Do not invoke the underlying tools (e.g. `uv`, `ruff`) directly. `jq` is an exception and can be run directly.
+
+Use `jq` to parse and read JSON output (e.g. from `mise run dev -- <URL> --dump-json`).
+
 ## Commits
 
 When 2 or more files with unrelated changes are pending, suggest making separate commits.

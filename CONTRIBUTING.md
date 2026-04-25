@@ -1,6 +1,12 @@
 # CONTRIBUTING
 
-See [yt-dlp's wiki on plugin development](https://github.com/yt-dlp/yt-dlp/wiki/Plugin-Development).
+Refer to these yt-dlp docs when developing:
+
+- [Plugin Development wiki](https://github.com/yt-dlp/yt-dlp/wiki/Plugin-Development) — plugin structure and registration
+- [CONTRIBUTING.md](https://github.com/yt-dlp/yt-dlp/blob/master/CONTRIBUTING.md) — extractor coding requirements and best practices (use of `traverse_obj`, `url_or_none`, etc.)
+- [extractor/common.py](https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/extractor/common.py) — available info dict fields and helper methods
+- [utils/_utils.py](https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/utils/_utils.py) — utility functions (`unified_timestamp`, `url_or_none`, `int_or_none`, etc.)
+- [utils/traversal.py](https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/utils/traversal.py) — `traverse_obj` and related traversal utilities
 
 ## Getting started
 
