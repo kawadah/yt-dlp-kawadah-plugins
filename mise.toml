@@ -5,6 +5,7 @@ pin = true
 
 [tools]
 actionlint = "1.7.12"
+jq = "1.8.1"
 python = "3.14.4"
 shellcheck = "0.11.0" # Used by actionlint
 uv = "0.11.7"
