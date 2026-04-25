@@ -16,7 +16,7 @@ class JFNPodsIE(InfoExtractor):
         {
             "url": "https://jfn-pods.com/program/300011016/voice/F0o28r8LF5",
             "info_dict": {
-                "id": "JPFMN6911673150",
+                "id": "F0o28r8LF5",
                 "ext": "mp3",
                 "title": "2026年4月25日放送",
                 "series": "KOTORIの「遠き山に陽は落ちて」",
@@ -44,7 +44,7 @@ class JFNPodsIE(InfoExtractor):
         episode = traverse_obj(data, ("episodes", 0)) or {}
 
         return {
-            "id": episode.get("uid") or voice_id,
+            "id": voice_id,
             "title": episode.get("title"),
             "url": (
                 url_or_none(episode.get("audioUrl"))
