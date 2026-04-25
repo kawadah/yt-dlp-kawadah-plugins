@@ -48,7 +48,7 @@ class HiBiKiIE(InfoExtractor):
                 f'{self._API_BASE}/videos/play_check?video_id={video_id}',
                 program_id,
                 headers=self._HEADERS,
-                note=f'Downloading {"additional " if is_additional else ""}video play token',
+                note=f'Downloading {"additional " if is_additional else ""}video playlist URL',
             )
 
             playlist_url = play_check['playlist_url']
