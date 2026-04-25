@@ -7,5 +7,5 @@ See [yt-dlp's docs on installing plugins](https://github.com/yt-dlp/yt-dlp#insta
 
 ## Supported websites
 - [HiBiKi Radio Station](https://hibiki-radio.jp)
-- [JOQR Podcasts](https://podcastqr.joqr.co.jp)
-- [TOKYO FM Podcasts](https://www.tfm.co.jp/podcast/)
+- [PodcastQR](https://podcastqr.joqr.co.jp)
+- [Tokyofm ポッドキャスト](https://www.tfm.co.jp/podcast/)
