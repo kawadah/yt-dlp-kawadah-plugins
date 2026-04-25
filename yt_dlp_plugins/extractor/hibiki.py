@@ -1,4 +1,5 @@
 from yt_dlp.extractor.common import InfoExtractor
+from yt_dlp.utils import unified_timestamp
 
 
 class HiBiKiIE(InfoExtractor):
@@ -32,8 +33,20 @@ class HiBiKiIE(InfoExtractor):
         episode = program['episode']
         program_name = program.get('name', '')
         episode_name = episode.get('name', '')
-        thumbnail = program.get('sp_image_url') or program.get('pc_image_url')
         description = program.get('description')
+
+        thumbnails = []
+        for img_key, info_key in [('sp_image_url', 'sp_image_info'), ('pc_image_url', 'pc_image_info')]:
+            img_url = program.get(img_key)
+            if img_url:
+                img_info = program.get(info_key) or {}
+                thumbnails.append({
+                    'url': img_url,
+                    'width': img_info.get('width'),
+                    'height': img_info.get('height'),
+                })
+
+        release_timestamp = unified_timestamp(program.get('episode_updated_at'))
 
         entries = []
 
@@ -62,8 +75,13 @@ class HiBiKiIE(InfoExtractor):
                 'id': str(video_id),
                 'title': title,
                 'formats': formats,
-                'thumbnail': thumbnail,
+                'thumbnails': thumbnails,
                 'description': description,
+                'duration': video.get('duration'),
+                'series': program_name,
+                'episode': episode_name,
+                'episode_id': str(episode['id']),
+                'release_timestamp': release_timestamp,
             })
 
         return self.playlist_result(
