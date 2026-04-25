@@ -2,6 +2,7 @@ from yt_dlp.extractor.common import InfoExtractor
 from yt_dlp.utils import traverse_obj, unified_timestamp, url_or_none
 
 
+# HiBiKi Radio Station
 class HiBiKiIE(InfoExtractor):
     _VALID_URL = r"https://hibiki-radio\.jp/description/(?P<id>[a-zA-Z0-9_-]+)/detail"
 

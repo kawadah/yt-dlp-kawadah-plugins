@@ -6,6 +6,7 @@ from yt_dlp.utils import (
 )
 
 
+# PodcastQR
 class JOQRPodcastsIE(InfoExtractor):
     _VALID_URL = r"https?://podcastqr\.joqr\.co\.jp/programs/(?P<id>[a-zA-Z0-9_-]+)"
 
