@@ -10,7 +10,7 @@ from yt_dlp.utils import (
 
 # JFN Pods
 class JFNPodsIE(InfoExtractor):
-    _VALID_URL = r"https?://jfn-pods\.com/program/[^/]+/voice/(?P<id>[^/?#]+)"
+    _VALID_URL = r"https?://jfn-pods\.com/program/(?P<program_id>[0-9]+)/voice/(?P<id>[a-zA-Z0-9]+)"
 
     _TESTS = [
         {
