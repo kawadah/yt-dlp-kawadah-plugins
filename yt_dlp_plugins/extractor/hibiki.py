@@ -11,7 +11,36 @@ class HiBiKiIE(InfoExtractor):
             'id': 'haruyuri',
             'title': '福嶋晴菜・藤本侑里のはるゆり開花宣言',
         },
-        'playlist_mincount': 1,
+        'playlist_count': 2,
+        'playlist': [
+            {
+                'info_dict': {
+                    'id': '21157',
+                    'ext': 'm4a',
+                    'title': '福嶋晴菜・藤本侑里のはるゆり開花宣言 第26回（最終回）',
+                    'series': '福嶋晴菜・藤本侑里のはるゆり開花宣言',
+                    'episode': '第26回（最終回）',
+                    'episode_id': '17247',
+                    'duration': 4130,
+                    'release_date': '20260130',
+                    'release_timestamp': 1769803200,
+                },
+            },
+            {
+                'info_dict': {
+                    'id': '21158',
+                    'ext': 'm4a',
+                    'title': '福嶋晴菜・藤本侑里のはるゆり開花宣言 第26回（最終回）（楽屋裏）',
+                    'series': '福嶋晴菜・藤本侑里のはるゆり開花宣言',
+                    'episode': '第26回（最終回）',
+                    'episode_id': '17247',
+                    'duration': 776.99,
+                    'release_date': '20260130',
+                    'release_timestamp': 1769803200,
+                },
+            },
+        ],
+        'params': {'skip_download': True},
     }]
 
     _API_BASE = 'https://vcms-api.hibiki-radio.jp/api/v1'
