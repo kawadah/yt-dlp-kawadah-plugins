@@ -23,7 +23,7 @@ class HiBiKiIE(InfoExtractor):
                     'episode_id': '17247',
                     'duration': 4130,
                     'release_date': '20260130',
-                    'release_timestamp': 1769803200,
+                    'release_timestamp': 1769770800,
                 },
             },
             {
@@ -36,7 +36,7 @@ class HiBiKiIE(InfoExtractor):
                     'episode_id': '17247',
                     'duration': 776.99,
                     'release_date': '20260130',
-                    'release_timestamp': 1769803200,
+                    'release_timestamp': 1769770800,
                 },
             },
         ],
@@ -75,7 +75,7 @@ class HiBiKiIE(InfoExtractor):
                     'height': img_info.get('height'),
                 })
 
-        release_timestamp = unified_timestamp(program.get('episode_updated_at'))
+        release_timestamp = unified_timestamp(program.get('episode_updated_at'), tz_offset=9)
 
         entries = []
 
