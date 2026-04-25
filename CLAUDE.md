@@ -24,6 +24,8 @@ Always run project tasks via `mise run <task>`. Do not invoke the underlying too
 
 Use `jq` to parse and read JSON output (e.g. from `mise run dev -- <URL> --dump-json`).
 
+Run `mise run format:python:fix` after editing a Python file.
+
 ## Commits
 
 When 2 or more files with unrelated changes are pending, suggest making separate commits.
