@@ -1,5 +1,5 @@
 from yt_dlp.extractor.common import InfoExtractor
-from yt_dlp.utils import unified_timestamp
+from yt_dlp.utils import traverse_obj, unified_timestamp, url_or_none
 
 
 class HiBiKiIE(InfoExtractor):
@@ -59,20 +59,21 @@ class HiBiKiIE(InfoExtractor):
             headers=self._HEADERS,
         )
 
-        episode = program['episode']
+        episode = program.get('episode') or {}
         program_name = program.get('name', '')
         episode_name = episode.get('name', '')
         description = program.get('description')
 
         thumbnails = []
         for img_key, info_key in [('sp_image_url', 'sp_image_info'), ('pc_image_url', 'pc_image_info')]:
-            img_url = program.get(img_key)
+            img_url = url_or_none(program.get(img_key))
             if img_url:
-                img_info = program.get(info_key) or {}
                 thumbnails.append({
                     'url': img_url,
-                    'width': img_info.get('width'),
-                    'height': img_info.get('height'),
+                    **traverse_obj(program, (info_key, {
+                        'width': ('width', {int}),
+                        'height': ('height', {int}),
+                    })),
                 })
 
         release_timestamp = unified_timestamp(program.get('episode_updated_at'), tz_offset=9)
@@ -84,7 +85,9 @@ class HiBiKiIE(InfoExtractor):
             if not video:
                 continue
 
-            video_id = video['id']
+            video_id = video.get('id')
+            if not video_id:
+                continue
 
             play_check = self._download_json(
                 f'{self._API_BASE}/videos/play_check?video_id={video_id}',
@@ -93,7 +96,10 @@ class HiBiKiIE(InfoExtractor):
                 note=f'Downloading {"additional " if is_additional else ""}video playlist URL',
             )
 
-            playlist_url = play_check['playlist_url']
+            playlist_url = url_or_none(play_check.get('playlist_url'))
+            if not playlist_url:
+                continue
+
             formats = self._extract_m3u8_formats(playlist_url, str(video_id))
 
             title = f'{program_name} {episode_name}'
@@ -109,7 +115,7 @@ class HiBiKiIE(InfoExtractor):
                 'duration': video.get('duration'),
                 'series': program_name,
                 'episode': episode_name,
-                'episode_id': str(episode['id']),
+                'episode_id': str(episode.get('id') or ''),
                 'release_timestamp': release_timestamp,
             })
 
