@@ -8,7 +8,8 @@ from yt_dlp.utils import (
 )
 
 
-class TOKYOFMPodcastIE(InfoExtractor):
+# Tokyofm ポッドキャスト
+class TOKYOFMPodcastsIE(InfoExtractor):
     _VALID_URL = r"https?://www\.tfm\.co\.jp/podcast/(?P<id>[a-zA-Z0-9_-]+)"
 
     _TESTS = [
