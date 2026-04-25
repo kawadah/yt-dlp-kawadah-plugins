@@ -6,4 +6,4 @@ yt-dlp plugins for personal use.
 See [yt-dlp's docs on installing plugins](https://github.com/yt-dlp/yt-dlp#installing-plugins).
 
 ## Supported websites
-TBD
+- [HiBiKi Radio Station](https://hibiki-radio.jp)
