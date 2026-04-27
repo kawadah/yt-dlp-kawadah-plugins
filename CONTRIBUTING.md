@@ -10,7 +10,7 @@ Refer to these yt-dlp docs when developing:
 
 ## Getting started
 
-1. Install [mise](https://mise.jdx.dev)
+1. Install [mise](https://mise.en.dev)
 2. In the repository root, run:
 
    ```
