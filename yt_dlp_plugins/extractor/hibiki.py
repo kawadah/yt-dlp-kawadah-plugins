@@ -24,8 +24,8 @@ class HiBiKiIE(InfoExtractor):
                         "episode": "第26回（最終回）",
                         "episode_id": "17247",
                         "duration": 4130,
-                        "release_date": "20260130",
-                        "release_timestamp": 1769770800,
+                        "upload_date": "20260130",
+                        "timestamp": 1769770800,
                     },
                 },
                 {
@@ -37,8 +37,8 @@ class HiBiKiIE(InfoExtractor):
                         "episode": "第26回（最終回）",
                         "episode_id": "17247",
                         "duration": 776.99,
-                        "release_date": "20260130",
-                        "release_timestamp": 1769770800,
+                        "upload_date": "20260130",
+                        "timestamp": 1769770800,
                     },
                 },
             ],
@@ -90,9 +90,7 @@ class HiBiKiIE(InfoExtractor):
                     }
                 )
 
-        release_timestamp = unified_timestamp(
-            program.get("episode_updated_at"), tz_offset=9
-        )
+        timestamp = unified_timestamp(program.get("episode_updated_at"), tz_offset=9)
 
         entries = []
 
@@ -135,7 +133,7 @@ class HiBiKiIE(InfoExtractor):
                     "series": program_name,
                     "episode": episode_name,
                     "episode_id": str(episode.get("id") or ""),
-                    "release_timestamp": release_timestamp,
+                    "timestamp": timestamp,
                 }
             )
 
