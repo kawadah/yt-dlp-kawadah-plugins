@@ -5,8 +5,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "yt-dlp-kawadah-plugins"
 version = "2026.04.22"
+description = "yt-dlp plugins for Japanese radio and podcast sites"
+readme = "README.md"
 requires-python = ">=3.10"
+license = "Unlicense"
+license-files = ["LICENSE"]
+authors = [{ name = "kawadah" }]
 classifiers = ["Private :: Do Not Upload"]
+
+[project.urls]
+Repository = "https://github.com/kawadah/yt-dlp-kawadah-plugins"
 
 [dependency-groups]
 dev = [
