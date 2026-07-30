@@ -11,3 +11,11 @@ See [yt-dlp's docs on installing plugins](https://github.com/yt-dlp/yt-dlp#insta
 - [PodcastQR](https://podcastqr.joqr.co.jp)
 - [Tokyofm ポッドキャスト](https://www.tfm.co.jp/podcast/)
 - [ニッポン放送 PODCAST STATION](https://podcast.1242.com)
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+Released into the public domain under the [Unlicense](LICENSE).
