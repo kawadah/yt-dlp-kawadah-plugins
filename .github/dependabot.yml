@@ -10,3 +10,13 @@ updates:
         update-types: [minor, patch]
     schedule:
       interval: daily
+  - package-ecosystem: uv
+    directory: /
+    cooldown:
+      default-days: 3
+    groups:
+      all-non-major:
+        patterns: ["*"]
+        update-types: [minor, patch]
+    schedule:
+      interval: daily
