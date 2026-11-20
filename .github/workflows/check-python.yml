@@ -2,10 +2,6 @@ name: Check Python
 
 on:
   pull_request:
-    paths:
-      - "**/*.py"
-      - "**/pyproject.toml"
-      - .github/workflows/check-python.yml
 
 permissions: {}
 

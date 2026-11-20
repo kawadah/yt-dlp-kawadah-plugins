@@ -3,7 +3,11 @@ name: Check workflows
 on:
   pull_request:
     paths:
+      - .github/dependabot.yml
       - .github/workflows/*.yml
+      - mise.lock
+      - mise.toml
+      - zizmor.yml
 
 permissions: {}
 
